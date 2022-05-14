@@ -29,7 +29,7 @@ input {
   grid-column: 3/5;
 }
 
-#clearItem {
+.zero {
   grid-column: 1/3;
 }
 

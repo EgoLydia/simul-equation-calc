@@ -10,8 +10,7 @@ let c2Input = document.getElementById("c2");
 let solve = document.getElementById("solve");
 let decimalAdded = false;
 let activeInput = undefined;
-let sign = document.getElementById('sign')
-
+let sign = document.getElementById("sign");
 
 x1Input.addEventListener("focus", onFocus);
 y1Input.addEventListener("focus", onFocus);
@@ -19,9 +18,9 @@ c1Input.addEventListener("focus", onFocus);
 x2Input.addEventListener("focus", onFocus);
 y2Input.addEventListener("focus", onFocus);
 c2Input.addEventListener("focus", onFocus);
-sign.addEventListener('click', switchSign);
+sign.addEventListener("click", switchSign);
 solve.addEventListener("click", solveEquation);
-clearItem.addEventListener('click', clear)
+clearItem.addEventListener("click", clear);
 
 function solveEquation() {
   let x1 = x1Input.value;
@@ -42,23 +41,21 @@ function onFocus(e) {
 
 for (let i = 0; i < numbers.length; i++) {
   numbers[i].addEventListener("click", (e) => {
-    if(!activeInput)
-        return;
+    if (!activeInput) return;
 
     activeInput.value += e.target.innerHTML;
   });
 }
 
-function switchSign() { 
-    if(!activeInput)
-        return;
+function switchSign() {
+  if (!activeInput) return;
 
-    activeInput.value =
-      activeInput.value.charAt(0) === "-"
-        ? activeInput.value.slice(1)
-        : `-${activeInput.value}`;
+  activeInput.value =
+    activeInput.value.charAt(0) === "-"
+      ? activeInput.value.slice(1)
+      : `-${activeInput.value}`;
 }
 
-function clear(){
-    activeInput.value =""
+function clear() {
+  activeInput.value =""
 }
