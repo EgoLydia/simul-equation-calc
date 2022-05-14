@@ -39,7 +39,7 @@ input {
 .displayResult {
   grid-column: 1 / 5;
   font-size: 30px;
-  background-color: rgb(197, 197, 240) !important;
+  background-color: rgb(197, 197, 240, 50%) !important;
   color: white;
   font-weight: 700;
 }
