@@ -36,6 +36,7 @@ input {
 .display {
   padding: 20px;
 }
+
 .displayResult {
   grid-column: 1 / 5;
   font-size: 30px;
@@ -51,7 +52,7 @@ input {
   cursor: pointer;
   padding: 10px;
   background-color: #f9f9f9;
-  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+  transition: border-color 0.2s ease-in-out, background-color 0.2s;
 }
 
 .calculator div:hover {
@@ -60,18 +61,21 @@ input {
   font-weight: 700;
 }
 
-.container{
-    margin-top: 100px;
+.container {
+  margin-top: 100px;
 }
+
 
 @media (min-width: 500px) {
   input {
     width: 120px !important;
   }
+
   .container {
     width: 90% !important;
   }
 }
+
 @media (min-width: 768px) {
   input {
     width: 180px !important;
@@ -86,6 +90,7 @@ input {
     width: 85% !important;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 60% !important;
