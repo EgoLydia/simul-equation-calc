@@ -57,5 +57,11 @@ function switchSign() {
 }
 
 function clear() {
-  activeInput.value =""
+  x1Input.value ="";
+  y1Input.value="";
+  c1Input.value ="";
+  x2Input.value ="";
+  y2Input.value ="";
+  c2Input.value ="";
+  finalResult.innerHTML =""
 }
