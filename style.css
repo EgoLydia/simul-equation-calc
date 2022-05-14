@@ -60,6 +60,10 @@ input {
   font-weight: 700;
 }
 
+.container{
+    margin-top: 100px;
+}
+
 @media (min-width: 500px) {
   input {
     width: 120px !important;
